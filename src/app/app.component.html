@@ -1,52 +1,7 @@
-
-<div class="container">
-  <div class="ui-g">
-      <div class="ui-g-12">
-        <h1>
-          Categoria
-        </h1>
-      </div>
-
-      <div class="ui-g-12 ui-fluid">
-        <label>Descrição</label>
-        <input pinputText type="text">
-      </div>
-
-      <div class="ui-g-12">
-          <button pButton type="submit" label="Pesquisar" ></button>
-      </div>
-
-
-  </div>
-
-  <div class="ui-g">
-      <div class="ui-g-12">
-          <p-table {value} = "categorias" [paginator]="true" [rows]="3">
-              <ng-template pTemplate="header">
-                <try>
-                  <th class="col-id-header">id</th>
-                  <th>Descricao</th>
-                  <th class="col-acoes"></th>
-                </try>
-              </ng-template>
-              <ng-template pTemplate="body" let-cat>
-                <try>
-                  <td class="col-id">{{cat.id}} </td>
-                  <td>{{cat.nome}} </td>
-                  <td class="col-acoes">
-                      <button pButton icon="fa-pencil" pToolTip="Editar" toolTipPosition="top" showDelay="1000"></button>
-                      <button pButton icon="fa-trash" pToolTip="Excluir" toolTipPosition="top" showDelay="1000"></button>
-                  </td>
-                </try>
-              </ng-template>
-          </p-table>
-      </div>
-
-  <div class="ui-g-12">
-    <a pButton label="Nova Categoria"></a>
-  </div>
-
-  </div>
-</div>
+<!--
+  <app-categorias-cadastro></app-categorias-cadastro>
+  <app-categorias-pesquisa></app-categorias-pesquisa>
+-->
+<router-outlet></router-outlet>
 
 
